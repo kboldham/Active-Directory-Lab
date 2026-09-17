@@ -12,8 +12,8 @@ I created Organizational Units in Active Directory Users and Computers to organi
 
 This provides a structured way to manage accounts and apply policies to specific groups of systems or users.
 
-**Screenshot:**
-`screenshots/01-ou-structure.png`
+
+![]creenshots/01-ou-structure.png)
 
 ---
 
@@ -23,9 +23,9 @@ I created a test employee account in Active Directory and configured the initial
 
 I then assigned an initial password for the account and configured the appropriate password options.
 
-**Screenshots:**
-`screenshots/02-create-user-details.png`
-`screenshots/03-create-user-password.png`
+
+![](screenshots/02-create-user-details.png)
+![](screenshots/03-create-user-password.png)
 
 ---
 
@@ -37,9 +37,9 @@ Security groups can be used to manage access to shared resources without assigni
 
 I verified that the user appeared as a member of the intended group.
 
-**Screenshots:**
-`screenshots/04-add-user-to-security-group.png`
-`screenshots/05-security-group-membership-verified.png`
+
+![](screenshots/04-add-user-to-security-group.png)
+![](screenshots/05-security-group-membership-verified.png)
 
 ---
 
@@ -50,7 +50,7 @@ I simulated a common help desk request by resetting the domain user's password t
 This represents a typical Tier 1 task for users who forget their password or require an administrator-initiated reset.
 
 **Screenshot:**
-`screenshots/06-password-reset.png`
+![]creenshots/06-password-reset.png)
 
 ---
 
@@ -60,9 +60,9 @@ I configured permissions for a network share using both share-level and NTFS per
 
 The permissions were assigned so access could be controlled through Active Directory security groups instead of individual user accounts.
 
-**Screenshots:**
-`screenshots/07-share-permissions.png`
-`screenshots/08-ntfs-permissions.png`
+
+![](screenshots/07-share-permissions.png)
+![](screenshots/08-ntfs-permissions.png)
 
 ---
 
@@ -72,13 +72,13 @@ I created and linked a Group Policy Object to the domain.
 
 Group Policy provides centralized control over Windows user and computer settings in an Active Directory environment.
 
-I then used `gpresult` from the client system to inspect the policies and domain information being applied to the workstation.
+I then used gpresult from the client system to inspect the policies and domain information being applied to the workstation.
 
-**Screenshots:**
-`screenshots/09-gpo-linked-to-domain.png`
-`screenshots/13-gpresult-current-state.png`
 
-**Note:** The current `gpresult` screenshot should be replaced later with one clearly showing the intended GPO successfully applied.
+![](screenshots/09-gpo-linked-to-domain.png)
+![](screenshots/13-gpresult-current-state.png)
+
+
 
 ---
 
@@ -88,9 +88,9 @@ I configured the Windows client to communicate with the domain controller and at
 
 Administrative domain credentials were provided to authorize the domain join.
 
-**Screenshots:**
-`screenshots/10-domain-join-credentials.png`
-`screenshots/11-domain-join-admin-authentication.png`
+
+![](screenshots/10-domain-join-credentials.png)
+![](screenshots/11-domain-join-admin-authentication.png)
 
 ---
 
@@ -100,10 +100,10 @@ After joining the workstation to the domain, I validated communication between t
 
 I used PowerShell to verify the secure channel between the client and Active Directory.
 
-A successful secure-channel test confirmed that the workstation could authenticate against the domain controller.
 
-**Screenshot:**
-`screenshots/12-domain-secure-channel-verified.png`
+
+
+![](screenshots/12-domain-secure-channel-verified.png)
 
 ---
 
