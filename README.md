@@ -13,7 +13,7 @@ I created Organizational Units in Active Directory Users and Computers to organi
 This provides a structured way to manage accounts and apply policies to specific groups of systems or users.
 
 
-![]creenshots/01-ou-structure.png)
+![](screenshots/01-ou-structure.png)
 
 ---
 
@@ -50,7 +50,7 @@ I simulated a common help desk request by resetting the domain user's password t
 This represents a typical Tier 1 task for users who forget their password or require an administrator-initiated reset.
 
 **Screenshot:**
-![]creenshots/06-password-reset.png)
+![](screenshots/06-password-reset.png)
 
 ---
 
